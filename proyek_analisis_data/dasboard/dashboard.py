@@ -7,8 +7,8 @@ import seaborn as sns
 url1 = "https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_day.csv"
 url2 = "https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_hour.csv"
 
-main_dataset_day = pd.read_csv(url1, on_bad_lines='skip')
-main_dataset_hour = pd.read_csv(url2, on_bad_lines='skip')
+main_dataset_day = pd.read_csv(url1)
+main_dataset_hour = pd.read_csv(url2)
 
 
 st.title("Dashboard Penyewaan Sepeda")
