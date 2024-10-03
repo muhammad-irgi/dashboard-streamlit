@@ -5,7 +5,9 @@ import seaborn as sns
 
 # membaca dataset
 
-main_dataset_day = pd.read_csv("https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_day.csv")
+main_dataset_day = pd.read_csv("https://raw.githubusercontent.com/muhammad-irgi/dashboard-streamlit/main/proyek_analisis_data/dasboard/main_dataset_day.csv")
+main_dataset_hour = pd.read_csv("https://raw.githubusercontent.com/muhammad-irgi/dashboard-streamlit/main/proyek_analisis_data/dasboard/main_dataset_hour.csv")
+
 
 st.title("Dashboard Penyewaan Sepeda")
 
@@ -84,10 +86,7 @@ with by_day:
         plt.xticks(rotation=45)  
         st.header("Total Rentals per Month (2012)")
         st.pyplot(fig2)
-
-
-main_dataset_day = pd.read_csv("https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_hour.csv")
-
+        
 with by_hour:
     st.header("By Hour")
     st.header("Jumlah Penyewaan Sepeda Berdasarkan Jam")
