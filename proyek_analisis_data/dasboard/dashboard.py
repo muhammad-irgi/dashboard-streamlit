@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # membaca dataset
-url1 = "https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_day.csv"
-url2 = "https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_hour.csv"
+url1 = 'https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_day.csv'
+url2 = 'https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_hour.csv'
 
 main_dataset_day = pd.read_csv(url1)
 main_dataset_hour = pd.read_csv(url2)
