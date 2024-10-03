@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # membaca dataset
-main_dataset = pd.read_csv('main_dataset.csv')
+main_dataset = pd.read_csv('https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset.csv')
 
 st.title("Dashboard Penyewaan Sepeda")
 
