@@ -9,7 +9,7 @@ main_dataset = pd.read_csv(url, on_bad_lines='skip')
 st.title("Dashboard Penyewaan Sepeda")
 
 st.header("Total Penyewaan Sepeda")
-total_rentals = main_dataset['cnt_x'].sum()
+total_rentals = main_dataset['cnt_x'][:732].sum()
 st.metric(label="Total Penyewaan Sepeda", value=total_rentals)
 
 st.title('Belajar Analisis Data')
