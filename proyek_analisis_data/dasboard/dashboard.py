@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # membaca dataset
-main_dataset_day = pd.read_csv('C:/dicoding/dasboard/main_dataset_day.csv')
-main_dataset_hour = pd.read_csv('C:/dicoding/dasboard/main_dataset_hour.csv')
+url1 = "https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_day.csv"
+url2 = "https://github.com/muhammad-irgi/dashboard-streamlit/blob/main/proyek_analisis_data/dasboard/main_dataset_hour.csv"
+
+main_dataset_day = pd.read_csv(url1, on_bad_lines='skip')
+main_dataset_hour = pd.read_csv(url2, on_bad_lines='skip')
 
 
 st.title("Dashboard Penyewaan Sepeda")
