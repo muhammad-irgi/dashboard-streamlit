@@ -8,6 +8,14 @@ import seaborn as sns
 main_dataset_day = pd.read_csv("https://raw.githubusercontent.com/muhammad-irgi/dashboard-streamlit/main/proyek_analisis_data/dasboard/main_dataset_day.csv")
 main_dataset_hour = pd.read_csv("https://raw.githubusercontent.com/muhammad-irgi/dashboard-streamlit/main/proyek_analisis_data/dasboard/main_dataset_hour.csv")
 
+with st.sidebar:
+    st.title('Hello')
+    st.header('Muhammad Irgi')
+    
+    # Menambahkan spasi kosong di atas dan di bawah gambar
+    st.write("")  # Spasi kosong di atas
+    st.image('https://raw.githubusercontent.com/muhammad-irgi/dashboard-streamlit/main/proyek_analisis_data/dasboard/user_photo.png', width=150)  # Mengatur ukuran gambar
+    st.write("")  # Spasi kosong di bawah gambar
 
 st.title("Dashboard Penyewaan Sepeda")
 
@@ -15,7 +23,7 @@ st.header("Total Penyewaan Sepeda")
 total_rentals = main_dataset_day['cnt'].sum()
 st.metric(label="Total Penyewaan Sepeda", value=total_rentals)
 
-st.title('Belajar Analisis Data')
+st.title('Analisis Data by Day or Hour')
 by_day, by_hour = st.tabs(["By Day", "By Hour"])
 
 with by_day:
